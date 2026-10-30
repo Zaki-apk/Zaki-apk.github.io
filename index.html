@@ -4,116 +4,79 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#050711">
-<meta name="description" content="ZstarDz — عالم التطبيقات والألعاب والإبداع الرقمي.">
-<title>ZstarDz | الموقع الرسمي</title>
+<meta name="description" content="ZstarDz منصة تقنية مستقلة للتطبيقات والألعاب والشروحات والأخبار التقنية. اكتشف تطبيقاتنا ومقالاتنا ونصائح الأمان الرقمي.">
+<meta name="robots" content="index,follow">
+<title>ZstarDz | التطبيقات والتقنية والإبداع</title>
+<link rel="canonical" href="https://zaki-apk.github.io/">
 <style>
 :root{--bg:#050711;--panel:#0c1223;--cyan:#48f5e4;--blue:#5987ff;--purple:#a56bff;--text:#f4f7ff;--muted:#aab5cf}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;overflow-x:hidden}
-#matrix{position:fixed;inset:0;width:100%;height:100%;z-index:-2;opacity:.24}
-body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 15%,#233c7950,transparent 48%),linear-gradient(180deg,#050711aa,#050711f5)}
-a{color:inherit}
-.wrap{width:min(1100px,92%);margin:auto}
-header{position:sticky;top:0;z-index:10;background:#070b18d9;border-bottom:1px solid #8ca7ff22;backdrop-filter:blur(16px)}
-.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{font-size:23px;font-weight:900;letter-spacing:1.5px;color:var(--cyan);text-shadow:0 0 22px #48f5e455}
-.links{display:flex;gap:22px;flex-wrap:wrap}
-.links a{text-decoration:none;color:#d2dcf5;font-size:14px}
-.links a:hover{color:var(--cyan)}
-.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:75px 0 65px}
-.planet{width:145px;height:145px;margin:0 auto 28px;border-radius:50%;position:relative;background:radial-gradient(circle at 30% 25%,#fff 0 2%,#9bfef5 4%,#36a9ff 18%,#373b9b 48%,#10152f 72%);box-shadow:inset -20px -20px 32px #000b,0 0 45px #4b8cff66,0 0 100px #a56bff33;animation:float 5s ease-in-out infinite}
-.planet:before,.planet:after{content:"";position:absolute;inset:32px -27px;border:2px solid #48f5e499;border-radius:50%;transform:rotate(-25deg)}
-.planet:after{inset:20px -20px;border-color:#a56bff99;transform:rotate(55deg)}
-@keyframes float{50%{transform:translateY(-14px) rotate(8deg)}}
-.eyebrow{color:var(--cyan);font-size:12px;letter-spacing:4px;font-weight:bold}
-h1{font-size:clamp(48px,10vw,88px);margin:14px 0;background:linear-gradient(90deg,#fff,#74f8ed,#9c9cff);-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{max-width:700px;margin:auto;color:var(--muted);font-size:17px;line-height:2}
-.actions{display:flex;justify-content:center;gap:13px;flex-wrap:wrap;margin-top:30px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 23px;border-radius:13px;text-decoration:none;font-weight:bold;background:linear-gradient(110deg,var(--cyan),#8dbdff);color:#07101b;box-shadow:0 8px 30px #48f5e422;transition:.2s}
-.btn:hover{transform:translateY(-3px);filter:brightness(1.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;overflow-x:hidden}
+#matrix{position:fixed;inset:0;width:100%;height:100%;z-index:-2;opacity:.2}body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 50% 15%,#233c7950,transparent 48%),linear-gradient(180deg,#050711aa,#050711f5)}
+a{color:inherit}.wrap{width:min(1100px,92%);margin:auto}header{position:sticky;top:0;z-index:10;background:#070b18eF;border-bottom:1px solid #8ca7ff22;backdrop-filter:blur(16px)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-size:23px;font-weight:900;letter-spacing:1.5px;color:var(--cyan);text-shadow:0 0 22px #48f5e455}
+.links{display:flex;gap:17px;flex-wrap:wrap}.links a{text-decoration:none;color:#d2dcf5;font-size:13px}.links a:hover{color:var(--cyan)}
+.hero{min-height:74vh;display:grid;place-items:center;text-align:center;padding:65px 0}.planet{width:130px;height:130px;margin:0 auto 25px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#fff 0 2%,#9bfef5 4%,#36a9ff 18%,#373b9b 48%,#10152f 72%);box-shadow:inset -20px -20px 32px #000b,0 0 45px #4b8cff66,0 0 100px #a56bff33;animation:float 5s ease-in-out infinite;position:relative}
+.planet:before,.planet:after{content:"";position:absolute;inset:30px -25px;border:2px solid #48f5e499;border-radius:50%;transform:rotate(-25deg)}.planet:after{inset:20px -20px;border-color:#a56bff99;transform:rotate(55deg)}
+@keyframes float{50%{transform:translateY(-13px) rotate(8deg)}}.eyebrow{color:var(--cyan);font-size:12px;letter-spacing:4px;font-weight:bold}
+h1{font-size:clamp(46px,10vw,82px);margin:14px 0;background:linear-gradient(90deg,#fff,#74f8ed,#9c9cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:760px;margin:auto;color:var(--muted);font-size:16px;line-height:2}.actions{display:flex;justify-content:center;gap:13px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 21px;border-radius:13px;text-decoration:none;font-weight:bold;background:linear-gradient(110deg,var(--cyan),#8dbdff);color:#07101b;box-shadow:0 8px 30px #48f5e422;transition:.2s}.btn:hover{transform:translateY(-3px);filter:brightness(1.08)}
 .btn.secondary{background:#101a32;color:#eaf1ff;border:1px solid #829eff55;box-shadow:none}
-section{padding:34px 0 54px}
-.section-title{text-align:center;font-size:27px;margin:0 0 24px;color:var(--cyan)}
-.about,.card{background:linear-gradient(145deg,#111b32eF,#0a1021ed);border:1px solid #819dff2c;border-radius:20px;box-shadow:0 16px 45px #0005}
-.about{padding:25px;text-align:center;color:var(--muted);line-height:2}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.card{padding:25px;transition:.25s}
-.card:hover{transform:translateY(-5px);border-color:#48f5e477}
-.icon{font-size:35px}
-.card h3{margin:13px 0 9px;font-size:21px}
-.card p{color:var(--muted);line-height:1.9;font-size:14px;min-height:52px}
-.store{border-color:#48f5e477;background:linear-gradient(145deg,#102b36ee,#10142bee);position:relative;overflow:hidden}
-.store:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;background:#48f5e414;left:-75px;top:-80px}
-.store .btn{width:100%;margin-top:10px}
-.store-note{display:block;margin-top:12px;color:#9fb6d5;font-size:12px;text-align:center}
-.contact{text-align:center}
-footer{text-align:center;padding:28px 12px;border-top:1px solid #819dff22;color:#8290ad;font-size:13px}
-footer a{color:var(--cyan);text-decoration:none}
-@media(max-width:600px){.nav{padding:13px 0;align-items:flex-start;flex-direction:column}.links{gap:14px}.hero{min-height:70vh;padding-top:55px}.planet{width:115px;height:115px}.lead{font-size:15px}.card p{min-height:0}}
+section{padding:32px 0 48px}.section-title{text-align:center;font-size:26px;margin:0 0 22px;color:var(--cyan)}
+.about,.card{background:linear-gradient(145deg,#111b32ef,#0a1021ed);border:1px solid #819dff2c;border-radius:19px;box-shadow:0 16px 45px #0005}.about{padding:24px;color:var(--muted);line-height:2}.about.center{text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:17px}.card{padding:23px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#48f5e477}
+.icon{font-size:32px}.card h3{margin:12px 0 8px;font-size:19px}.card p{color:var(--muted);line-height:1.9;font-size:14px}.store{border-color:#48f5e477;background:linear-gradient(145deg,#102b36ee,#10142bee)}.store .btn{width:100%;margin-top:8px}
+.article{margin-bottom:15px}.article h3{color:#eafaff}.article p{margin-bottom:0}.tag{display:inline-block;padding:4px 9px;border-radius:20px;background:#172849;color:#8deee7;font-size:11px}
+.contact{text-align:center}footer{text-align:center;padding:25px 12px;border-top:1px solid #819dff22;color:#8290ad;font-size:13px}footer a{color:var(--cyan);text-decoration:none}
+@media(max-width:650px){.nav{padding:13px 0;align-items:flex-start;flex-direction:column}.links{gap:12px}.hero{min-height:65vh;padding-top:48px}.planet{width:110px;height:110px}.lead{font-size:14px}}
 </style>
 </head>
 <body>
 <canvas id="matrix" aria-hidden="true"></canvas>
-<header><div class="wrap nav">
-  <div class="brand">✦ ZstarDz</div>
-  <nav class="links" aria-label="القائمة">
-    <a href="#about">من نحن</a><a href="#apps">التطبيقات</a><a href="#world">عالم Zstar</a><a href="#contact">اتصل بنا</a>
-  </nav>
-</div></header>
+<header><div class="wrap nav"><div class="brand">✦ ZstarDz</div><nav class="links" aria-label="القائمة الرئيسية">
+<a href="#about">من نحن</a><a href="#apps">التطبيقات</a><a href="#articles">المقالات</a><a href="#privacy">الخصوصية</a><a href="#contact">اتصل بنا</a>
+</nav></div></header>
 <main>
-<section class="hero wrap">
- <div>
-  <div class="planet" aria-hidden="true"></div>
-  <div class="eyebrow">WELCOME TO THE NEXT LEVEL</div>
-  <h1>ZstarDz</h1>
-  <p class="lead">مرحباً بك في عالم ZstarDz — مساحة تجمع التطبيقات والألعاب والإبداع الرقمي، بهوية مستقبلية وتجربة مصممة لعشاق التقنية.</p>
-  <div class="actions">
-   <a class="btn" href="https://www.mediafire.com/file/i3mjp87v08inzso/Star-Apps.apk/file" target="_blank" rel="noopener">📱 تحميل متجر Zstar Apps</a>
-   <a class="btn secondary" href="#about">اكتشف الموقع</a>
-  </div>
- </div>
+<section class="hero wrap"><div><div class="planet" aria-hidden="true"></div><div class="eyebrow">TECH • APPS • DIGITAL CREATIVITY</div><h1>ZstarDz</h1>
+<p class="lead">منصة تقنية مستقلة تهتم بالتطبيقات والألعاب والشروحات الرقمية. اكتشف أدوات جديدة، واقرأ نصائح عملية تساعدك على استخدام التقنية بوعي وأمان.</p>
+<div class="actions"><a class="btn" href="https://www.mediafire.com/file/i3mjp87v08inzso/Star-Apps.apk/file" target="_blank" rel="noopener noreferrer">📱 تحميل متجر Zstar Apps</a><a class="btn secondary" href="#articles">اقرأ المقالات</a></div></div></section>
+
+<section id="about" class="wrap"><h2 class="section-title">من نحن</h2><div class="about center">ZstarDz مشروع رقمي مستقل يشارك معلومات وشروحات عن التطبيقات والألعاب والتقنية. هدفنا تقديم محتوى واضح ومفيد باللغة العربية، مع توضيح مصادر التحميل والتنبيه إلى أهمية حماية الأجهزة والبيانات. لا نمثل Google أو أي شركة أخرى.</div></section>
+
+<section id="apps" class="wrap"><h2 class="section-title">التطبيقات</h2><div class="grid">
+<article class="card store"><div class="icon">📲</div><h3>Zstar Apps</h3><p>متجر تطبيقات Zstar. يمكنك زيارة صفحة التحميل عبر MediaFire، والتحقق من مصدر الملف وأذوناته قبل التثبيت.</p><a class="btn" href="https://www.mediafire.com/file/i3mjp87v08inzso/Star-Apps.apk/file" target="_blank" rel="noopener noreferrer">⬇ تحميل متجر Zstar Apps</a></article>
+<article class="card"><div class="icon">🎮</div><h3>الألعاب والأدوات</h3><p>مساحة للتعريف بالألعاب والأدوات الرقمية ومشاركة الإرشادات المتعلقة باستخدامها.</p></article>
+<article class="card"><div class="icon">🛡️</div><h3>الأمان الرقمي</h3><p>نصائح عامة لحماية الهاتف والحسابات، وفهم الأذونات ومصادر تنزيل التطبيقات.</p></article>
+</div></section>
+
+<section id="articles" class="wrap"><h2 class="section-title">مقالات وشروحات تقنية</h2>
+<article class="card article"><span class="tag">دليل للمبتدئين</span><h3>كيف تتحقق من أمان ملف APK قبل تثبيته؟</h3><p>حمّل التطبيقات من مصدر موثوق، وتحقق من اسم المطوّر واسم الحزمة والأذونات التي يطلبها التطبيق. تجنب الملفات المعدّلة مجهولة المصدر، ولا تمنح التطبيق صلاحيات لا يحتاجها لوظيفته. افحص الملف بأداة حماية موثوقة عند الشك، وتذكّر أن نتيجة الفحص لا تضمن السلامة بنسبة 100%.</p></article>
+<article class="card article"><span class="tag">نصائح الهاتف</span><h3>طرق بسيطة لتحسين أداء هاتف Android</h3><p>حدّث النظام والتطبيقات، واحذف التطبيقات التي لا تستخدمها، واترك مساحة تخزين كافية. أعد تشغيل الهاتف عند الحاجة، وتجنب تطبيقات التنظيف التي تعد بوعود مبالغ فيها أو تطلب صلاحيات غير ضرورية.</p></article>
+<article class="card article"><span class="tag">الخصوصية</span><h3>راجع أذونات التطبيقات بانتظام</h3><p>امنح الكاميرا والميكروفون والموقع وجهات الاتصال للتطبيقات التي تحتاجها فقط. يمكنك مراجعة الأذونات من إعدادات Android وسحب أي إذن لم يعد ضرورياً.</p></article>
 </section>
-<section id="about" class="wrap">
- <h2 class="section-title">من نحن</h2>
- <div class="about">ZstarDz علامة رقمية مستقلة تهتم بتطوير التطبيقات والأدوات والأفكار الإبداعية. نطمح إلى تقديم تجارب مفيدة وبسيطة بلمسة تقنية مميزة.</div>
-</section>
-<section id="apps" class="wrap">
- <h2 class="section-title">متجر تطبيقاتنا</h2>
- <div class="grid">
-  <article class="card store">
-   <div class="icon">📲</div><h3>Zstar Apps</h3>
-   <p>متجر تطبيقات Zstar في مكان واحد. حمّل ملف التطبيق من MediaFire وثبّته على جهازك.</p>
-   <a class="btn" href="https://www.mediafire.com/file/i3mjp87v08inzso/Star-Apps.apk/file" target="_blank" rel="noopener">⬇ تحميل التطبيق الآن</a>
-   <span class="store-note">رابط التحميل الرسمي المرسل من صاحب الموقع</span>
-  </article>
-  <article class="card"><div class="icon">🎮</div><h3>الألعاب والأدوات</h3><p>مساحة مخصصة للألعاب والأدوات والتجارب القادمة من Zstar.</p></article>
-  <article class="card"><div class="icon">✨</div><h3>مشاريع جديدة</h3><p>تابع الموقع لاكتشاف المشاريع والتحديثات الجديدة عند توفرها.</p></article>
- </div>
-</section>
-<section id="world" class="wrap">
- <h2 class="section-title">عالم Zstar</h2>
- <div class="grid">
-  <article class="card"><div class="icon">🌌</div><h3>تقنية وإبداع</h3><p>أفكار رقمية بتصميم مستقبلي وخلفية Matrix متحركة.</p></article>
-  <article class="card"><div class="icon">🎧</div><h3>الموسيقى</h3><p>إبداعات صوتية وهوية موسيقية خاصة بعالم ZstarDz.</p></article>
- </div>
-</section>
-<section id="contact" class="wrap contact">
- <h2 class="section-title">ابقَ على تواصل</h2>
- <div class="about"><p>للاقتراحات والاستفسارات والتعاون</p><a class="btn" href="mailto:zakiess444@gmail.com">✉ zakiess444@gmail.com</a></div>
-</section>
+
+<section id="privacy" class="wrap"><h2 class="section-title">سياسة الخصوصية</h2><div class="about">
+<p><strong>آخر تحديث: 30 أكتوبر 2026</strong></p>
+<p>يحترم موقع ZstarDz خصوصية زواره. لا يطلب الموقع إنشاء حساب ولا يجمع عمداً بيانات شخصية عبر نماذج داخلية في نسخته الحالية.</p>
+<p>قد تستخدم خدمات الاستضافة أو مزودو الخدمات التقنية سجلات تشغيل أساسية لأغراض الأمان وتشغيل الموقع. كما أن الروابط الخارجية، مثل MediaFire، تخضع لسياسات الخصوصية وشروط الاستخدام الخاصة بمواقعها؛ ننصح بمراجعتها قبل استخدام تلك الخدمات.</p>
+<p>إذا أضيفت مستقبلاً خدمات إعلانات أو تحليلات أو ملفات تعريف ارتباط، فسيتم تحديث هذه السياسة وشرح أنواع البيانات والغرض منها وطرق إدارة الخيارات وفق المتطلبات القانونية والسياسات المعمول بها.</p>
+<p>للاستفسارات المتعلقة بالخصوصية: <a href="mailto:zakiess444@gmail.com">zakiess444@gmail.com</a>.</p>
+</div></section>
+
+<section id="disclaimer" class="wrap"><h2 class="section-title">إخلاء المسؤولية</h2><div class="about">
+<p>المعلومات المنشورة في ZstarDz لأغراض تعليمية وإعلامية عامة، وقد تتغير تفاصيل التطبيقات والخدمات بمرور الوقت. يتحمل المستخدم مسؤولية التحقق من ملاءمة أي تطبيق أو ملف قبل تنزيله أو تثبيته.</p>
+<p>الروابط الخارجية تؤدي إلى مواقع لا يديرها ZstarDz، ولسنا مسؤولين عن محتواها أو ممارساتها. أسماء العلامات التجارية والشعارات تعود إلى أصحابها. لا ندّعي ارتباطاً أو اعتماداً من Google أو MediaFire.</p>
+</div></section>
+
+<section id="contact" class="wrap contact"><h2 class="section-title">اتصل بنا</h2><div class="about center"><p>للاقتراحات، تصحيح المعلومات، أو الاستفسارات المتعلقة بالموقع:</p><a class="btn" href="mailto:zakiess444@gmail.com?subject=تواصل%20مع%20ZstarDz">✉ zakiess444@gmail.com</a></div></section>
 </main>
-<footer>© <span id="year"></span> ZstarDz — جميع الحقوق محفوظة</footer>
+<footer>© <span id="year"></span> ZstarDz · <a href="#privacy">سياسة الخصوصية</a> · <a href="#contact">اتصل بنا</a></footer>
 <script>
 document.getElementById('year').textContent=new Date().getFullYear();
-const canvas=document.getElementById('matrix'),ctx=canvas.getContext('2d');
-let w=0,h=0,drops=[];
-function resize(){w=canvas.width=window.innerWidth;h=canvas.height=window.innerHeight;drops=Array(Math.ceil(w/18)).fill(1)}
-window.addEventListener('resize',resize);resize();
-const chars='01アイウエオカキクケコサシスセソZSTAR';
-function draw(){ctx.fillStyle='rgba(5,7,17,.12)';ctx.fillRect(0,0,w,h);ctx.fillStyle='#48f5e4';ctx.font='14px monospace';
- for(let i=0;i<drops.length;i++){ctx.fillText(chars[Math.floor(Math.random()*chars.length)],i*18,drops[i]*18);if(drops[i]*18>h&&Math.random()>.975)drops[i]=0;drops[i]++}}
-setInterval(draw,50);
+const canvas=document.getElementById('matrix'),ctx=canvas.getContext('2d');let w=0,h=0,drops=[];
+function resize(){w=canvas.width=innerWidth;h=canvas.height=innerHeight;drops=Array(Math.ceil(w/18)).fill(1)}
+addEventListener('resize',resize);resize();const chars='01アイウエオカキクケコサシスセソZSTAR';
+function draw(){ctx.fillStyle='rgba(5,7,17,.13)';ctx.fillRect(0,0,w,h);ctx.fillStyle='#48f5e4';ctx.font='14px monospace';for(let i=0;i<drops.length;i++){ctx.fillText(chars[Math.floor(Math.random()*chars.length)],i*18,drops[i]*18);if(drops[i]*18>h&&Math.random()>.975)drops[i]=0;drops[i]++}}
+setInterval(draw,55);
 </script>
-</body>
-</html>
+</body></html>
