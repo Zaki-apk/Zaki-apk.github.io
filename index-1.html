@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#05070b">
+<title>ZstarDz | Official</title>
+<style>
+:root{--cyan:#00f5d4;--green:#39ff88;--violet:#9b5cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#05070b;color:#eafdf7;font-family:Tahoma,Arial,sans-serif;overflow-x:hidden}
+#matrix{position:fixed;inset:0;width:100%;height:100%;z-index:-3;opacity:.38}
+body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 50% 35%,#06382c66,transparent 48%),linear-gradient(180deg,#030609aa,#05070bee)}
+nav{width:min(1100px,92%);margin:22px auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border:1px solid #38ff9b33;border-radius:18px;background:#07110fd9;backdrop-filter:blur(14px)}
+.logo{font-weight:900;letter-spacing:2px;color:var(--green);font-size:20px;text-shadow:0 0 18px #39ff88}
+nav a{color:#c8eee0;text-decoration:none;margin-inline-start:18px;font-size:14px}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:55px 18px 70px;position:relative}
+.orb{width:150px;height:150px;border-radius:50%;margin:0 auto 30px;position:relative;background:radial-gradient(circle at 32% 28%,#eaffff 0 2%,#00f5d4 5%,#087c68 27%,#061b1c 58%,#020507 72%);box-shadow:inset -18px -20px 35px #000,0 0 28px #00f5d455,0 0 85px #00f5d422;animation:float 5s ease-in-out infinite}
+.orb:before,.orb:after{content:"";position:absolute;inset:19px -24px;border:2px solid #00f5d477;border-radius:50%;transform:rotate(-28deg);box-shadow:0 0 15px #00f5d455}
+.orb:after{inset:30px -31px;transform:rotate(58deg);border-color:#9b5cff88}
+@keyframes float{0%,100%{transform:translateY(0) rotate(-7deg)}50%{transform:translateY(-16px) rotate(7deg)}}
+.tag{color:var(--green);letter-spacing:4px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(42px,9vw,82px);margin:14px 0;background:linear-gradient(90deg,#fff,#75ffe0,#39ff88);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 35px #00f5d422}
+.lead{max-width:650px;margin:0 auto;color:#b6cec6;line-height:2;font-size:17px}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.btn{padding:13px 24px;border-radius:12px;text-decoration:none;font-weight:bold;border:1px solid #39ff88;color:#07100c;background:linear-gradient(120deg,#39ff88,#00d9c0);box-shadow:0 0 25px #39ff8833}
+.btn.alt{background:#07110fcc;color:#d8fff0;border-color:#39ff8866;box-shadow:none}
+section{width:min(1000px,90%);margin:0 auto 70px}
+.section-title{text-align:center;color:var(--green);font-size:25px;margin-bottom:25px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{padding:24px;border:1px solid #39ff8830;border-radius:18px;background:linear-gradient(145deg,#0b1916dd,#07100fd9);box-shadow:0 12px 40px #0006;transition:.25s}
+.card:hover{transform:translateY(-6px);border-color:#39ff8888;box-shadow:0 0 28px #00f5d422}
+.card .ico{font-size:28px}.card h3{color:#dffff2;margin:12px 0 8px}.card p{color:#a9c5ba;line-height:1.8;font-size:14px}
+footer{text-align:center;padding:28px 15px;color:#78958a;border-top:1px solid #39ff8822;font-size:13px}
+footer a{color:var(--green);text-decoration:none}
+@media(max-width:600px){nav{padding:12px}nav a{margin-inline-start:9px;font-size:12px}.hero{min-height:75vh}.orb{width:120px;height:120px}}
+</style>
+</head>
+<body>
+<canvas id="matrix"></canvas>
+<nav><div class="logo">ZstarDz</div><div><a href="#about">من نحن</a><a href="#world">العالم</a><a href="#contact">اتصل بنا</a></div></nav>
+<main class="hero">
+ <div>
+  <div class="orb" aria-hidden="true"></div>
+  <div class="tag">WELCOME TO THE NEXT LEVEL</div>
+  <h1>ZstarDz</h1>
+  <p class="lead">عالم من الإبداع والتقنية والألعاب. هنا تبدأ أفكارنا، وهنا نصنع تجارب رقمية بطابع Zstar الخاص.</p>
+  <div class="actions"><a class="btn" href="#world">اكتشف عالم Zstar</a><a class="btn alt" href="mailto:zakiess444@gmail.com">تواصل معنا</a></div>
+ </div>
+</main>
+<section id="about"><h2 class="section-title">من نحن</h2><div class="card"><h3>نصنع أفكاراً خارج المألوف</h3><p>ZstarDz علامة تقنية مستقلة تهتم بالتطبيقات والألعاب والتجارب الرقمية. هدفنا تقديم محتوى بسيط، مفيد، ومميز للجميع.</p></div></section>
+<section id="world"><h2 class="section-title">عالم Zstar</h2><div class="cards">
+ <article class="card"><div class="ico">📱</div><h3>متجر Zstar Apps</h3><p>حمّل متجر تطبيقاتي واكتشف تطبيقات Zstar في مكان واحد.</p><a class="btn" href="https://www.mediafire.com/file/i3mjp87v08inzso/Star-Apps.apk/file" target="_blank" rel="noopener">تحميل المتجر</a></article>
+ <article class="card"><div class="ico">🎮</div><h3>الألعاب</h3><p>أدوات وتجارب موجهة لعشاق الألعاب.</p></article>
+ <article class="card"><div class="ico">🎧</div><h3>الموسيقى</h3><p>إبداعات صوتية وهوية موسيقية خاصة.</p></article>
+</div></section>
+<section id="contact"><h2 class="section-title">ابقَ على تواصل</h2><div class="card" style="text-align:center"><p>للاقتراحات والاستفسارات والتعاون</p><a class="btn" href="mailto:zakiess444@gmail.com">zakiess444@gmail.com</a></div></section>
+<footer>© <span id="year"></span> ZstarDz — All rights reserved.</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const c=document.getElementById('matrix'),ctx=c.getContext('2d');let w,h,cols,drops;
+function resize(){w=c.width=innerWidth;h=c.height=innerHeight;cols=Math.floor(w/17);drops=Array(cols).fill(1)}
+addEventListener('resize',resize);resize();
+const chars='01アイウエオカキクケコサシスセソタチツテトZSTAR';
+function draw(){ctx.fillStyle='rgba(3,7,9,.10)';ctx.fillRect(0,0,w,h);ctx.fillStyle='#20e88a';ctx.font='14px monospace';
+for(let i=0;i<drops.length;i++){const t=chars[Math.floor(Math.random()*chars.length)];ctx.fillText(t,i*17,drops[i]*17);if(drops[i]*17>h&&Math.random()>.975)drops[i]=0;drops[i]++}}
+setInterval(draw,48);
+</script>
+</body></html>
